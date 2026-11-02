@@ -1,0 +1,334 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOVA MOBILE | Premium Tech Store</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- BACKGROUND -->
+<div class="background-glow"></div>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <div class="logo">
+        <span class="logo-icon">N</span>
+        NOVA<span>MOBILE</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#phones">Smartphones</a>
+        <a href="#accessories">Accessories</a>
+        <a href="#offers">Offers</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <button class="search-btn">⌕</button>
+        <button class="cart-btn" onclick="document.getElementById('cart').scrollIntoView({behavior:'smooth'})">
+            🛒 Cart <span id="cartCount">0</span>
+        </button>
+    </div>
+
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="tag">
+            ✦ THE FUTURE OF TECHNOLOGY
+        </div>
+
+        <h1>
+            EXPERIENCE<br>
+            <span>THE FUTURE.</span>
+        </h1>
+
+        <p>
+            Discover powerful smartphones,
+            premium accessories and next-level
+            technology at amazing prices.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#phones" class="primary-btn">
+                Explore Collection ↗
+            </a>
+
+            <a href="#accessories" class="secondary-btn">
+                Discover More
+            </a>
+
+        </div>
+
+        <div class="stats">
+
+            <div>
+                <h2>100%</h2>
+                <p>Genuine Products</p>
+            </div>
+
+            <div>
+                <h2>1 Year</h2>
+                <p>Brand Warranty*</p>
+            </div>
+
+            <div>
+                <h2>24/7</h2>
+                <p>Online Shopping</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- 3D PHONE -->
+    <div class="hero-visual">
+
+        <div class="circle circle-one"></div>
+        <div class="circle circle-two"></div>
+
+        <div class="floating-phone">
+
+            <div class="camera">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+
+            <div class="phone-display">
+                <h2>NOVA</h2>
+                <p>BEYOND<br>LIMITS.</p>
+                <div class="display-orb"></div>
+            </div>
+
+        </div>
+
+        <div class="floating-card">
+            <small>STARTING FROM</small>
+            <h2>₹12,999</h2>
+        </div>
+
+        <div class="rating-card">
+            ⭐ 4.9
+            <small>Customer Rating</small>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits">
+
+    <div>🚀 Fast Delivery</div>
+    <div>🛡 Genuine Products</div>
+    <div>💳 Secure Shopping</div>
+    <div>🎧 Customer Support</div>
+
+</section>
+
+<!-- SMARTPHONES -->
+<section class="products" id="phones">
+
+    <div class="section-heading">
+        <div>
+            <span>OUR COLLECTION</span>
+            <h1>Latest Smartphones<span>.</span></h1>
+            <p>Discover your next favourite device.</p>
+        </div>
+    </div>
+
+    <div class="product-container">
+
+        <div class="product-card">
+
+            <div class="product-image purple">
+                <span class="product-badge">BESTSELLER</span>
+                <div class="mini-phone">
+                    <div class="mini-camera"></div>
+                </div>
+                <div class="product-shadow"></div>
+            </div>
+
+            <div class="product-info">
+                <small>5G SMARTPHONE</small>
+                <h2>Nova X Pro 5G</h2>
+                <p>8GB RAM | 256GB | 50MP Camera</p>
+                <h3>₹29,999</h3>
+                <button onclick="addToCart('Nova X Pro 5G',29999)">
+                    ADD TO CART +
+                </button>
+            </div>
+
+        </div>
+
+        <div class="product-card">
+
+            <div class="product-image blue">
+                <span class="product-badge">NEW ARRIVAL</span>
+                <div class="mini-phone blue-phone">
+                    <div class="mini-camera"></div>
+                </div>
+                <div class="product-shadow"></div>
+            </div>
+
+            <div class="product-info">
+                <small>5G SMARTPHONE</small>
+                <h2>PixelWave S 5G</h2>
+                <p>12GB RAM | 256GB | OLED</p>
+                <h3>₹39,499</h3>
+                <button onclick="addToCart('PixelWave S 5G',39499)">
+                    ADD TO CART +
+                </button>
+            </div>
+
+        </div>
+
+        <div class="product-card">
+
+            <div class="product-image green">
+                <span class="product-badge">HOT DEAL</span>
+                <div class="mini-phone green-phone">
+                    <div class="mini-camera"></div>
+                </div>
+                <div class="product-shadow"></div>
+            </div>
+
+            <div class="product-info">
+                <small>5G SMARTPHONE</small>
+                <h2>Aero Lite 5G</h2>
+                <p>6GB RAM | 128GB | 5000mAh</p>
+                <h3>₹16,999</h3>
+                <button onclick="addToCart('Aero Lite 5G',16999)">
+                    ADD TO CART +
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ACCESSORIES -->
+<section class="products accessories" id="accessories">
+
+    <div class="section-heading">
+        <div>
+            <span>MORE THAN MOBILES</span>
+            <h1>Premium Accessories<span>.</span></h1>
+            <p>Everything your smartphone needs.</p>
+        </div>
+    </div>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <div class="accessory-image orange">🎧</div>
+            <div class="product-info">
+                <small>WIRELESS AUDIO</small>
+                <h2>SonicPods Pro</h2>
+                <p>ANC | 30-hour Battery</p>
+                <h3>₹2,499</h3>
+                <button onclick="addToCart('SonicPods Pro',2499)">
+                    ADD TO CART +
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="accessory-image violet">🔋</div>
+            <div class="product-info">
+                <small>POWER ACCESSORY</small>
+                <h2>PowerMax 20K</h2>
+                <p>20000mAh | Fast Charging</p>
+                <h3>₹1,799</h3>
+                <button onclick="addToCart('PowerMax 20K',1799)">
+                    ADD TO CART +
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="accessory-image pink">📱</div>
+            <div class="product-info">
+                <small>MOBILE PROTECTION</small>
+                <h2>Flexi Armor Case</h2>
+                <p>Shockproof | Premium Design</p>
+                <h3>₹599</h3>
+                <button onclick="addToCart('Flexi Armor Case',599)">
+                    ADD TO CART +
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- OFFER -->
+<section class="offer" id="offers">
+
+    <div>
+        <span>LIMITED TIME OFFER</span>
+        <h1>TECHNOLOGY<br>MEETS STYLE.</h1>
+        <p>Discover special savings on selected products.</p>
+        <a href="#phones">SHOP NOW ↗</a>
+    </div>
+
+    <div class="offer-3d">
+        <h2>30%</h2>
+        <p>OFF</p>
+    </div>
+
+</section>
+
+<!-- SHOPPING CART -->
+<section class="cart-section" id="cart">
+
+    <span>YOUR SELECTION</span>
+    <h1>Shopping Cart 🛒</h1>
+
+    <div id="cartItems">
+        <p>Your shopping cart is empty.</p>
+    </div>
+
+    <h2>Total: ₹<span id="total">0</span></h2>
+
+    <button class="checkout" onclick="checkout()">
+        PROCEED TO CHECKOUT →
+    </button>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="logo">
+        NOVA<span>MOBILE</span>
+    </div>
+
+    <p>GOOD TECHNOLOGY. GOOD LIFE.</p>
+
+    <p>© 2026 NOVA MOBILE. DEMO STORE.</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
